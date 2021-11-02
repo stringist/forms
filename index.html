@@ -10,10 +10,20 @@
 
 <body>
     <h1>About You</h1>
-    <form name="questions" id="questions" autocomplete="on" action="">
-        <label for="favecolor">What is your favorite color?</label>
-        <input type="text" name="favecolor" id="favecolor">
-        <input type="submit"> </form>
+    <form name="questions" id="questions" method="post" autocomplete="on" data-netlify="true">
+        <input type="text" id="name" name="name" required><label for="name">Name</label><br>
+        <input type="email" id="email" name="email" required placeholder="gimme that"><label for="email">Email</label><br>
+        <input type="date" id="birthday" name="birthday"><label for="birthday">Birthday</label><br>
+        <input type="tel" name="mobile" id="mobile"><label for="mobile">Mobile phone</label>
+        <fieldset>
+            <legend>Would you like to hear more?</legend>
+            <input type="radio" name="yesno" id="no" value="no"><label for="no">NO</label>
+            <input type="radio" name="yesno" id="yes" value="yes"><label for="yes">Please god no</label>
+        </fieldset>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Go on, don't be shy"></textarea>
+        <br>
+        <button>Submit</button>
+    </form>
 </body>
 
 </html>
